@@ -6,16 +6,22 @@
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
+ * @author  Oscar Pinto
  * @version 2016.02.29
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
-    private Circle sun2;
+    private Square FblockOne;
+    private Square FblockOne2;
+    private Square FblockOne3;
+    private Square FblockOne4;
+    private Square FblockOne5;
+    private Square FblockOne6;
+    private Square FblockTwo;
+    private Square Iblock;
+    private Triangle Ablock;
+    private Circle SoccerBall;
+    private Person Person;
     private boolean drawn;
 
     /**
@@ -23,11 +29,40 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
-        sun2= new Circle();
+         FblockOne = new Square();
+         FblockOne2 = new Square();
+         FblockOne3 = new Square();
+         FblockOne4 = new Square();
+         FblockOne5 = new Square();
+         FblockOne6 = new Square();
+        Square FblockOne7 = new Square();
+        Square FblockOne8= new Square();
+    
+         Iblock= new Square();
+        Square Iblock2= new Square();
+        Square Iblock3= new Square();
+        Square Iblock4= new Square();
+        
+        FblockTwo = new Square();
+        Square FblockTwo2 = new Square();
+        Square FblockTwo3 = new Square();
+        Square FblockTwo4 = new Square();
+        Square FblockTwo5 = new Square();
+        Square FblockTwo6 = new Square();
+        Square FblockTwo7 = new Square();
+        
+        Ablock= new Triangle();
+        Triangle Ablock2= new Triangle();
+        Triangle Ablock3= new Triangle();
+        Triangle Ablock4= new Triangle();
+        Triangle Ablock5= new Triangle();
+        
+       SoccerBall= new Circle();
+        
+        Person= new Person();
+        
+        
+        
         drawn = false;
     }
 
@@ -37,31 +72,73 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
+            FblockOne.changeColor("red");
+            FblockOne.moveHorizontal(-280);
+            FblockOne.moveVertical(60);
+            FblockOne.changeSize(40);
+            FblockOne.makeVisible();
+            
+            FblockOne2.changeColor("red");
+            FblockOne2.moveHorizontal(-280);
+            FblockOne2.moveVertical(20);
+            FblockOne2.changeSize(40);
+            FblockOne2.makeVisible();
+            
+            FblockOne3.changeColor("red");
+            FblockOne3.moveHorizontal(-280);
+            FblockOne3.moveVertical(-20);
+            FblockOne3.changeSize(40);
+            FblockOne3.makeVisible();
+            
+            FblockOne4.changeColor("red");
+            FblockOne4.moveHorizontal(-280);
+            FblockOne4.moveVertical(-60);
+            FblockOne4.changeSize(40);
+            FblockOne4.makeVisible();
+            
+            FblockOne5.changeColor("red");
+            FblockOne5.moveHorizontal(-240);
+            FblockOne5.moveVertical(-60);
+            FblockOne5.changeSize(40);
+            FblockOne5.makeVisible();
+            
+            FblockOne6.changeColor("red");
+            FblockOne6.moveHorizontal(-200);
+            FblockOne6.moveVertical(-60);
+            FblockOne6.changeSize(40);
+            FblockOne6.makeVisible();
+            
+            FblockTwo.changeColor("blue");
+            FblockTwo.moveHorizontal(-80);
+            FblockTwo.moveVertical(60);
+            FblockTwo.changeSize(40);
+            FblockTwo.makeVisible();
+            
+            
+            Iblock.changeColor("black");
+            Iblock.moveHorizontal(-180);
+            Iblock.moveVertical(60);
+            Iblock.changeSize(40);
+           Iblock.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            Ablock.changeSize(60, 100);
+            Ablock.moveHorizontal(150);
+            Ablock.moveVertical(20);
+            Ablock.makeVisible();
     
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
-            sun2.changeColor("red");
-            sun2.moveHorizontal(-200);
-            sun2.changeSize(100);
-            sun2.makeVisible();
+            SoccerBall.changeColor("yellow");
+            SoccerBall.moveHorizontal(180);
+            SoccerBall.moveVertical(20);
+            SoccerBall.changeSize(30);
+            SoccerBall.makeVisible();
+            
+            Person.changeColor("green");
+            Person.moveHorizontal(400);
+            Person.moveVertical(10);
+            Person.makeVisible();
+                        
+            
             drawn = true;
         }
     }
@@ -71,11 +148,12 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
-        sun2.changeColor("black");
+        FblockOne.changeColor("black");
+        FblockTwo.changeColor("white");
+        Iblock.changeColor("black");
+        Ablock.changeColor("black");
+        SoccerBall.changeColor("black");
+        Person.changeColor("Black");
     }
 
     /**
@@ -83,9 +161,11 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        FblockOne.changeColor("red");
+        FblockTwo.changeColor("black");
+        Iblock.changeColor("green");
+        Ablock.changeColor("yellow");
+        SoccerBall.changeColor("blue");
+        Person.changeColor("white");        
     }
 }
