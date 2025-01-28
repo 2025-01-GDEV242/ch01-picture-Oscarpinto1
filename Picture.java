@@ -17,6 +17,7 @@ public class Picture
     private Square FblockOne4;
     private Square FblockOne5;
     private Square FblockOne6;
+    private Square FblockOne7;
     private Square FblockTwo;
     private Square Iblock;
     private Triangle Ablock;
@@ -35,7 +36,7 @@ public class Picture
          FblockOne4 = new Square();
          FblockOne5 = new Square();
          FblockOne6 = new Square();
-        Square FblockOne7 = new Square();
+         FblockOne7 = new Square();
         Square FblockOne8= new Square();
     
          Iblock= new Square();
@@ -109,18 +110,32 @@ public class Picture
             FblockOne6.changeSize(40);
             FblockOne6.makeVisible();
             
+            FblockOne7.changeColor("red");
+            FblockOne7.moveHorizontal(-240);
+            FblockOne7.moveVertical(00);
+            FblockOne7.changeSize(40);
+            FblockOne7.makeVisible();
+            
+            
+            
+            
+            Iblock.changeColor("black");
+            Iblock.moveHorizontal(-150);
+            Iblock.moveVertical(60);
+            Iblock.changeSize(40);
+           Iblock.makeVisible();
+            
+            
+            
+            
+            
+            
             FblockTwo.changeColor("blue");
             FblockTwo.moveHorizontal(-80);
             FblockTwo.moveVertical(60);
             FblockTwo.changeSize(40);
             FblockTwo.makeVisible();
             
-            
-            Iblock.changeColor("black");
-            Iblock.moveHorizontal(-180);
-            Iblock.moveVertical(60);
-            Iblock.changeSize(40);
-           Iblock.makeVisible();
     
             Ablock.changeSize(60, 100);
             Ablock.moveHorizontal(150);
