@@ -18,8 +18,22 @@ public class Picture
     private Square FblockOne5;
     private Square FblockOne6;
     private Square FblockOne7;
-    private Square FblockTwo;
+    
+    
     private Square Iblock;
+    private Square Iblock2;
+    private Square Iblock3;
+    private Square Iblock4;
+    
+    private Square FblockTwo;
+    private Square FblockTwo2;
+    private Square FblockTwo3;
+    private Square FblockTwo4;
+    private Square FblockTwo5;
+    private Square FblockTwo6;
+    private Square FblockTwo7;
+    
+    
     private Triangle Ablock;
     private Circle SoccerBall;
     private Person Person;
@@ -40,17 +54,17 @@ public class Picture
         Square FblockOne8= new Square();
     
          Iblock= new Square();
-        Square Iblock2= new Square();
-        Square Iblock3= new Square();
-        Square Iblock4= new Square();
+         Iblock2= new Square();
+         Iblock3= new Square();
+         Iblock4= new Square();
         
         FblockTwo = new Square();
-        Square FblockTwo2 = new Square();
-        Square FblockTwo3 = new Square();
-        Square FblockTwo4 = new Square();
-        Square FblockTwo5 = new Square();
-        Square FblockTwo6 = new Square();
-        Square FblockTwo7 = new Square();
+        FblockTwo2 = new Square();
+        FblockTwo3 = new Square();
+        FblockTwo4 = new Square();
+        FblockTwo5 = new Square();
+        FblockTwo6 = new Square();
+        FblockTwo7 = new Square();
         
         Ablock= new Triangle();
         Triangle Ablock2= new Triangle();
@@ -116,25 +130,74 @@ public class Picture
             FblockOne7.changeSize(40);
             FblockOne7.makeVisible();
             
-            
-            
-            
             Iblock.changeColor("black");
             Iblock.moveHorizontal(-150);
             Iblock.moveVertical(60);
             Iblock.changeSize(40);
-           Iblock.makeVisible();
+            Iblock.makeVisible();
+           
+           
+            Iblock2.changeColor("black");
+            Iblock2.moveHorizontal(-150);
+            Iblock2.moveVertical(20);
+            Iblock2.changeSize(40);
+            Iblock2.makeVisible();
+            
+            Iblock3.changeColor("black");
+            Iblock3.moveHorizontal(-150);
+            Iblock3.moveVertical(-20);
+            Iblock3.changeSize(40);
+            Iblock3.makeVisible();
             
             
-            
-            
+            Iblock4.changeColor("black");
+            Iblock4.moveHorizontal(-150);
+            Iblock4.moveVertical(-60);
+            Iblock4.changeSize(40);
+            Iblock4.makeVisible();
             
             
             FblockTwo.changeColor("blue");
-            FblockTwo.moveHorizontal(-80);
+            FblockTwo.moveHorizontal(-100);
             FblockTwo.moveVertical(60);
             FblockTwo.changeSize(40);
             FblockTwo.makeVisible();
+            
+            FblockTwo2.changeColor("blue");
+            FblockTwo2.moveHorizontal(-100);
+            FblockTwo2.moveVertical(20);
+            FblockTwo2.changeSize(40);
+            FblockTwo2.makeVisible();
+            
+            FblockTwo3.changeColor("blue");
+            FblockTwo3.moveHorizontal(-100);
+            FblockTwo3.moveVertical(-20);
+            FblockTwo3.changeSize(40);
+            FblockTwo3.makeVisible();
+            
+            FblockTwo4.changeColor("blue");
+            FblockTwo4.moveHorizontal(-100);
+            FblockTwo4.moveVertical(-60);
+            FblockTwo4.changeSize(40);
+            FblockTwo4.makeVisible();
+            
+            FblockTwo5.changeColor("blue");
+            FblockTwo5.moveHorizontal(-60);
+            FblockTwo5.moveVertical(-60);
+            FblockTwo5.changeSize(40);
+            FblockTwo5.makeVisible();
+            
+            FblockTwo6.changeColor("blue");
+            FblockTwo6.moveHorizontal(-20);
+            FblockTwo6.moveVertical(-60);
+            FblockTwo6.changeSize(40);
+            FblockTwo6.makeVisible();
+            
+            FblockTwo7.changeColor("blue");
+            FblockTwo7.moveHorizontal(-60);
+            FblockTwo7.moveVertical(00);
+            FblockTwo7.changeSize(40);
+            FblockTwo7.makeVisible();
             
     
             Ablock.changeSize(60, 100);
