@@ -21,7 +21,7 @@ public class Person
      */
     public Person()
     {
-        height = 60;
+        height = 40;
         width = 30;
         xPosition = 280;
         yPosition = 190;
@@ -78,7 +78,8 @@ public class Person
     {
         moveVertical(20);
     }
-
+     
+    
     /**
      * Move the person horizontally by 'distance' pixels.
      */
